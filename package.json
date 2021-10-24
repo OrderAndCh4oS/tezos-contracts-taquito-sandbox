@@ -1,0 +1,17 @@
+{
+  "name": "smart-contract-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@taquito/signer": "^10.2.1",
+    "@taquito/taquito": "^10.2.1",
+    "@taquito/tezbridge-signer": "^10.2.1"
+  }
+}
