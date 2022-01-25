@@ -1,5 +1,5 @@
 import {InMemorySigner} from '@taquito/signer';
-import estimateContract from '../utilities/estimate-contract.js';
+import getEstimate from '../utilities/get-estimate.js';
 import tezos from '../utilities/tezos.js';
 
 tezos.setProvider({
@@ -8,7 +8,7 @@ tezos.setProvider({
 });
 
 const contract = await tezos.contract.at('KT1FEwBk3XCpSEDHj5re1VnFyPr9oGpfr5Dy');
-const adderEstimate = estimateContract(contract);
+const adderEstimate = getEstimate(contract);
 
 const adder = async(a, b) => {
     const op = await contract.methods.default(a, b).send();

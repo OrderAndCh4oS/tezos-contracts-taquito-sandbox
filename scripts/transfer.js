@@ -5,8 +5,7 @@ import tezos from '../utilities/tezos.js';
 import estimateTransfer from '../utilities/estimate-transfer.js';
 
 tezos.setProvider({
-    signer: new InMemorySigner(
-        'edsk3QoqBuvdamxouPhin7swCvkQNgq4jP5KZPbwWNnwdZpSpJiEbq')
+    signer: new InMemorySigner('edsk3QoqBuvdamxouPhin7swCvkQNgq4jP5KZPbwWNnwdZpSpJiEbq')
 });
 
 const transfer = async(toAddress, xtzAmount) => {
